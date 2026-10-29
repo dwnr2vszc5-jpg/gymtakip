@@ -1,0 +1,11 @@
+name: Runner check
+on: [push]
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ok
+  mac-intel:
+    runs-on: macos-13
+    steps:
+      - run: ls -d /Applications/Xcode*.app
